@@ -64,13 +64,14 @@ class RockPaperScissors extends Component {
 
   evaluate = () => {
     const {userChoice, gameChoice} = this.state
+
     if (userChoice === gameChoice) {
       this.setState({gameStatus: gameStatusConstants.draw})
     } else if (userChoice === 'ROCK') {
       if (gameChoice === 'SCISSORS') {
         this.setState(prevState => ({
           gameStatus: gameStatusConstants.win,
-          score: prevState.score - 1,
+          score: prevState.score + 1,
         }))
       } else {
         this.setState(prevState => ({
@@ -82,7 +83,7 @@ class RockPaperScissors extends Component {
       if (gameChoice === 'ROCK') {
         this.setState(prevState => ({
           gameStatus: gameStatusConstants.win,
-          score: prevState.score - 1,
+          score: prevState.score + 1,
         }))
       } else {
         this.setState(prevState => ({
@@ -94,7 +95,7 @@ class RockPaperScissors extends Component {
       if (gameChoice === 'PAPER') {
         this.setState(prevState => ({
           gameStatus: gameStatusConstants.win,
-          score: prevState.score - 1,
+          score: prevState.score + 1,
         }))
       } else {
         this.setState(prevState => ({
@@ -122,12 +123,12 @@ class RockPaperScissors extends Component {
 
   renderGameWonView = () => {
     const {gameChoice, userChoice} = this.state
-    const {choiceList} = this.props
-    const userChoiceObjectLIST = choiceList.filter(
+    const {choicesList} = this.props
+    const userChoiceObjectLIST = choicesList.filter(
       choice => choice.id === userChoice,
     )
     const userChoiceObject = userChoiceObjectLIST[0]
-    const gameChoiceObjectLIST = choiceList.filter(
+    const gameChoiceObjectLIST = choicesList.filter(
       choice => choice.id === gameChoice,
     )
     const gameChoiceObject = gameChoiceObjectLIST[0]
