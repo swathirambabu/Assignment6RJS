@@ -110,7 +110,7 @@ export const PopUpBody = styled.div`
   padding: 20px;
 `
 
-export const GameResultViewContainer = styled.div`
+export const GameResultView = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 560px;

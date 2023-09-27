@@ -21,7 +21,7 @@ import {
   CloseButton,
   PopUpImage,
   PopUpBody,
-  GameResultViewContainer,
+  GameResultView,
   SelectedOptionsContainer,
   GameUserOptionsContainer,
   GameParticipantText,
@@ -135,7 +135,7 @@ class RockPaperScissors extends Component {
     const gameChoiceObject = gameChoiceObjectLIST[0]
 
     return (
-      <GameResultViewContainer>
+      <GameResultView>
         <SelectedOptionsContainer>
           <GameUserOptionsContainer>
             <GameParticipantText>You</GameParticipantText>
@@ -157,7 +157,7 @@ class RockPaperScissors extends Component {
         <PlayAgainButton type="button" onClick={this.onClickGoToGameView}>
           PLAY AGAIN
         </PlayAgainButton>
-      </GameResultViewContainer>
+      </GameResultView>
     )
   }
 
@@ -174,7 +174,7 @@ class RockPaperScissors extends Component {
     const gameChoiceObject = gameChoiceObjectLIST[0]
 
     return (
-      <GameResultViewContainer>
+      <GameResultView>
         <SelectedOptionsContainer>
           <GameUserOptionsContainer>
             <GameParticipantText>You</GameParticipantText>
@@ -196,7 +196,7 @@ class RockPaperScissors extends Component {
         <PlayAgainButton type="button" onClick={this.onClickGoToGameView}>
           PLAY AGAIN
         </PlayAgainButton>
-      </GameResultViewContainer>
+      </GameResultView>
     )
   }
 
@@ -213,7 +213,7 @@ class RockPaperScissors extends Component {
     const gameChoiceObject = gameChoiceObjectLIST[0]
 
     return (
-      <GameResultViewContainer>
+      <GameResultView>
         <SelectedOptionsContainer>
           <GameUserOptionsContainer>
             <GameParticipantText>You</GameParticipantText>
@@ -235,7 +235,7 @@ class RockPaperScissors extends Component {
         <PlayAgainButton type="button" onClick={this.onClickGoToGameView}>
           PLAY AGAIN
         </PlayAgainButton>
-      </GameResultViewContainer>
+      </GameResultView>
     )
   }
 
