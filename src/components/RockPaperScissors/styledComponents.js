@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const AppContainer = styled.div`
   background-color: #223a5f;
   min-height: 100vh;
+  display: flex;
   flex-direction: column;
   align-items: center;
 `
@@ -19,7 +20,7 @@ export const ResultContainer = styled.div`
 `
 export const Option = styled.h1`
   font-size: 16px;
-  font-family: roboto;
+  font-family: 'Roboto';
   font-weight: 700;
   color: white;
 `
@@ -42,13 +43,13 @@ export const ScoreContainer = styled.div`
 
 export const ScorePhrase = styled.p`
   font-size: 16px;
-  font-family: roboto;
+  font-family: 'Roboto';
   font-weight: 700;
   color: #223a5f;
 `
 export const ScoreNumber = styled.p`
   font-size: 28px;
-  font-family: roboto;
+  font-family: 'Roboto';
   font-weight: 700;
   color: #223a5f;
 `
@@ -57,10 +58,9 @@ export const GameViewContainer = styled.div`
   width: 65%;
   height: 60vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  max-width: 480px;
-  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
 `
 export const GameOptionsList = styled.ul`
   padding-left: 0px;
@@ -75,7 +75,7 @@ export const GameOptionsList = styled.ul`
 export const TriggerButton = styled.button`
   font-size: 16px;
   font-weight: 400;
-  font-family: roboto;
+  font-family: 'Roboto';
   color: #223a5f;
   padding: 8px 15px 8px 15px;
   margin: 8px;
@@ -135,7 +135,7 @@ export const GameParticipantText = styled.p`
   color: white;
   font-size: 20px;
   font-weight: 700;
-  font-family: roboto;
+  font-family: 'Roboto';
 `
 export const GameParticipantChoiceImage = styled.img`
   width: 170px;
@@ -146,14 +146,14 @@ export const ResultText = styled.p`
   color: white;
   font-size: 24px;
   font-weight: 700;
-  font-family: roboto;
+  font-family: 'Roboto';
   text-align: center;
 `
 
 export const PlayAgainButton = styled.button`
   font-size: 16px;
   font-weight: 400;
-  font-family: roboto;
+  font-family: 'Roboto';
   color: #223a5f;
   padding: 8px 15px 8px 15px;
   margin: 8px;
