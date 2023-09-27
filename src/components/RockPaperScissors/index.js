@@ -3,6 +3,7 @@ import {RiCloseLine} from 'react-icons/ri'
 import Popup from 'reactjs-popup'
 
 import 'reactjs-popup/dist/index.css'
+
 import GameOptions from '../GameOptions'
 
 import {
@@ -18,8 +19,8 @@ import {
   PopupContainer,
   TriggerButton,
   CloseButton,
-  PopupImage,
-  PopupBody,
+  PopUpImage,
+  PopUpBody,
   GameResultViewContainer,
   SelectedOptionsContainer,
   GameUserOptionsContainer,
@@ -62,7 +63,7 @@ class RockPaperScissors extends Component {
     return gameChoiceList[randomIndex]
   }
 
-  evaluate = () => {
+  evaluateGame = () => {
     const {userChoice, gameChoice} = this.state
 
     if (userChoice === gameChoice) {
