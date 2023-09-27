@@ -2,7 +2,7 @@ import {OptionImage, OptionListItem, GameOptionButton} from './styledComponents'
 
 const GameOptions = props => {
   const {optionDetails, onClickSetUserChoice} = props
-  const {image, id} = optionDetails
+  const {imageUrl, id} = optionDetails
 
   const userChoice = () => {
     onClickSetUserChoice(id)
@@ -15,7 +15,7 @@ const GameOptions = props => {
         onClick={userChoice}
         data-testid={`${id.toLowerCase()}Button`}
       >
-        <OptionImage src={image} alt={id} />
+        <OptionImage src={imageUrl} alt={id} />
       </GameOptionButton>
     </OptionListItem>
   )
