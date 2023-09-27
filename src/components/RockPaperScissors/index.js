@@ -287,15 +287,15 @@ class RockPaperScissors extends Component {
             window
           >
             {close => (
-              <PopupBody>
-                <PopupImage
+              <PopUpBody>
+                <PopUpImage
                   src="https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/rules-image.png"
                   alt="rules"
                 />
                 <CloseButton type="button" onClick={() => close()}>
                   <RiCloseLine />
                 </CloseButton>
-              </PopupBody>
+              </PopUpBody>
             )}
           </Popup>
         </PopupContainer>

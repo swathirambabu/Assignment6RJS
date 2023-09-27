@@ -99,11 +99,11 @@ export const CloseButton = styled.div`
   background-color: transparent;
 `
 
-export const PopupImage = styled.img`
+export const PopUpImage = styled.img`
   width: 90%;
   align-self: center;
 `
-export const PopupBody = styled.div`
+export const PopUpBody = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
