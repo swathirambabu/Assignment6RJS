@@ -140,7 +140,7 @@ class RockPaperScissors extends Component {
           <GameUserOptionsContainer>
             <GameParticipantText>You</GameParticipantText>
             <GameParticipantChoiceImage
-              src={userChoiceObject.image}
+              src={userChoiceObject.imageUrl}
               alt="your choice"
             />
           </GameUserOptionsContainer>
@@ -148,7 +148,7 @@ class RockPaperScissors extends Component {
           <GameUserOptionsContainer>
             <GameParticipantText>Other</GameParticipantText>
             <GameParticipantChoiceImage
-              src={gameChoiceObject.image}
+              src={gameChoiceObject.imageUrl}
               alt="opponent choice"
             />
           </GameUserOptionsContainer>
@@ -179,7 +179,7 @@ class RockPaperScissors extends Component {
           <GameUserOptionsContainer>
             <GameParticipantText>You</GameParticipantText>
             <GameParticipantChoiceImage
-              src={userChoiceObject.image}
+              src={userChoiceObject.imageUrl}
               alt="your choice"
             />
           </GameUserOptionsContainer>
@@ -187,7 +187,7 @@ class RockPaperScissors extends Component {
           <GameUserOptionsContainer>
             <GameParticipantText>Other</GameParticipantText>
             <GameParticipantChoiceImage
-              src={gameChoiceObject.image}
+              src={gameChoiceObject.imageUrl}
               alt="opponent choice"
             />
           </GameUserOptionsContainer>
@@ -218,7 +218,7 @@ class RockPaperScissors extends Component {
           <GameUserOptionsContainer>
             <GameParticipantText>You</GameParticipantText>
             <GameParticipantChoiceImage
-              src={userChoiceObject.image}
+              src={userChoiceObject.imageUrl}
               alt="your choice"
             />
           </GameUserOptionsContainer>
@@ -226,7 +226,7 @@ class RockPaperScissors extends Component {
           <GameUserOptionsContainer>
             <GameParticipantText>Other</GameParticipantText>
             <GameParticipantChoiceImage
-              src={gameChoiceObject.image}
+              src={gameChoiceObject.imageUrl}
               alt="opponent choice"
             />
           </GameUserOptionsContainer>
